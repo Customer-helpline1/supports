@@ -1,0 +1,251 @@
+@media only screen and (max-width:1400px){
+    span.off-50 {
+        right: -30px;
+        top: -71px;
+    }
+    .strugglesec img {
+        width: 100%;
+    }
+    section.footer-form:before {
+        left: -30px;
+    }
+}
+@media only screen and (max-width:1200px){
+    span.price-tag {
+        left: 76%;
+        top: 28px;
+    }
+    .nex-tim-bx, .prc-comb div {
+        font-size: 23px;
+    }
+    .img-choice img {
+        width: 100%;
+    }
+    .info-textchoice h2 {
+        font-size: 2.6rem;
+    }
+    .info-textchoice ul {
+        display: block;
+    }
+    .branding-icon ul li span {
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .btn1 {
+        font-size: 18px;
+    }
+    .services-sec .box h3 {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:1050px){
+    .strugglesec h2 {
+        font-size: 41px;
+    }
+    .cta-img img {
+        top: -26px;
+        width: 55%;
+    }
+    .prc-comb>span {
+        font-size: 60px;
+    }
+    .combo-box h2 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .add-contd h4 {
+        font-size: 22px;
+    }
+    .off-50 img {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:991px){
+    span.price-tag{
+        display: none;
+    }
+    section.lp-banner h1 {
+        font-size: 45px;
+        line-height: 46px;
+        margin-bottom: 15px;
+    }
+    section.lp-banner ul li {
+        font-size: 14px;
+        
+    }
+    .combo-box h2 {
+        font-size: 35px;
+        line-height: 31px;
+    }
+    .prc-comb>span {
+        font-size: 50px;
+    }
+    .nex-tim-bx, .prc-comb div {
+        font-size: 18px;
+    }
+    .btn1 {
+        padding: 0 20px;
+    }
+    .add-contd ul {
+        padding: 0;
+    }
+    section.footer-form h2 {
+        padding: 18px 13px;
+        font-size: 33px;
+        line-height: 38px;
+        text-align: center;
+        width: 100%;
+    }
+    section.footer-form .col-md-5 p {
+        font-size: 17px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0;
+    }
+    section.footer-form ul {
+        padding: 0;
+        text-align: center !important;
+        justify-content: center;
+    }
+    .chat, a.get-quote {
+        display: table;
+        margin: 0 auto;
+    }
+    section.footer-form .col-md-5 ul li {
+        margin: 0 6px;
+        font-size: 15px;
+    }
+    .mygrid {
+        width: 100% !important;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+}
+@media only screen and (max-width:850px){
+    .banner-form {
+        margin-top: 45px;
+    }
+    span.off-50 {
+        top: -21px;
+    }
+    .our-pricing-planss p {
+        font-size: 16px;
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width:767px){
+    section.portfolio, section.brand {
+        padding: 50px 0;
+    }
+    .mtpx-30 {
+        display: flex;
+        justify-content: center;
+    }
+    section.lp-banner ul li {
+        padding-left: 0 !important;
+        
+    }
+    section.lp-banner ul li:before {
+        display: none;
+    }
+    .mobile_view {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 10px;
+        background: #020523;
+    }
+    section.footer-form h3+p {
+        color: #ffffff;
+    }
+    .step2-cont {
+        padding-top: 50px;
+    }
+    .desktopbtn {
+        display: none;
+    }
+    header {
+        padding: 0;
+    }
+    .cta-img img{
+        display: none;
+    }
+    .testi-img img{
+        display: none;
+    }
+    .t-logo {
+        width: 150px;
+        padding: 7px;
+    }
+    .csBtns {
+        justify-content: center;
+        gap: 15px;
+    }
+    section.footer-form:before {
+        left: 0;
+        top: 21px;
+        width: 100%;
+        position: absolute;
+    }
+    .csBtns>a {
+        margin: 0 !important;
+    }
+    .add-contd li {
+        padding-left: 0;
+        justify-content: center;
+    }
+    section.testimonials {
+        padding: 0px 0 20px;
+    }
+    .floatbutton{
+        display: none;
+    }
+    .bntlist {
+        justify-content: center;
+    }
+    header a.btn-red {margin: 0 0 10px;display: table;}
+    header {position: inherit;}
+    section.lp-banner {padding: 26px 0 70px 0;}
+    .lp-banner p {font-size: 14px;width: 100%;}
+    section.lp-banner a.various { padding: 12px 20px;font-size: 16px;}
+    .banner-form {width: 100%;}
+    .branding-icon ul {display: block;}
+    .branding-icon ul li {margin-bottom: 20px;}
+    section.footer-form {padding: 30px 0 60px;}
+    section.footer-form h3 {margin-top: 40px;color: #fff;}
+    section.footer-form form input[type="submit"] {float: left;}
+    .strugglesec h2 {
+        text-align: center;
+    }
+    .mobile_view a.dskbtn {
+        color: #fff;
+    }
+    section.footer-form form input::placeholder, section.footer-form form textarea::placeholder,
+    section.footer-form form input, section.footer-form form textarea {
+        color: #fff;
+    }
+}
+@media only screen and (max-width:570px){
+    header a.btn-red {margin: 4% auto; display: table;}
+    section.lp-banner h1 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .info-textchoice h2, .content-style-2 h3, .strugglesec h2 {
+        font-size: 2.2rem !important;
+    }
+    .info-textchoice h2 br {
+        display: none;
+    }
+    .content-style-2 h3 br {
+        display: none;
+    }
+    section.lp-banner i img {
+        width: 100%;
+    }
+ 
+}
+@media (min-width:320px) and (max-width:480px){
+    header a.btn-red {margin: 4% auto; display: table;}
+}
