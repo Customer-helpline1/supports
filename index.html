@@ -1,0 +1,749 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Support | Get Help with Your Apple Devices</title>
+    <meta name="description" content="Official Apple support. Get help with setup, troubleshooting, and technical issues. Expert support available 24/7 for all Apple devices.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+
+        .logo {
+            width: 32px; /* Adjust the size of the logo */
+            height: 32px; /* Maintain aspect ratio */
+
+        }
+        
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #e1e5e9;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .iphone-logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #393939;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            padding-right: 780px;
+            
+        }
+        
+        .header-phone {
+            background: #303841;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .header-phone:hover {
+            background: #007AFF;
+            transform: translateY(-1px);
+        }
+        
+        .breadcrumb {
+            background: #f7f8fa;
+            padding: 12px 0;
+            border-bottom: 1px solid #e1e5e9;
+        }
+        
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .breadcrumb-text {
+            font-size: 14px;
+            color: #6b7280;
+        }
+        
+        .breadcrumb-link {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        .breadcrumb-link:hover {
+            text-decoration: underline;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #007AFF 0%, #007AFF 100%);
+            color: white;
+            padding: 48px 0;
+            text-align: center;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .hero-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            background: #ffffff;
+            color: #007AFF;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        
+        .support-info {
+            background: #f0f4ff;
+            padding: 24px 0;
+            border-bottom: 1px solid #e1e5e9;
+        }
+        
+        .support-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            text-align: center;
+        }
+        
+        .support-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .support-icon {
+            width: 48px;
+            height: 48px;
+            background: #007AFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .support-text {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        
+        .content-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .content-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        
+        .content-subtitle {
+            font-size: 16px;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .help-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+        
+        .help-card {
+            background: #ffffff;
+            border: 1px solid #e1e5e9;
+            border-radius: 50px;
+            padding: 24px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .help-card:hover {
+            border-color: #007AFF;
+            box-shadow: 0 4px 12px rgba(102, 45, 145, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .help-card-icon {
+            width: 56px;
+            height: 56px;
+            background: #f0f4ff;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #007AFF;
+        }
+        
+        .help-card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+        
+        .help-card-desc {
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
+        .emergency-support {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 50px;
+            padding: 32px;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .emergency-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #dc2626;
+            margin-bottom: 8px;
+        }
+        
+        .emergency-text {
+            font-size: 16px;
+            color: #7f1d1d;
+            margin-bottom: 24px;
+        }
+        
+        .emergency-phone {
+            font-size: 24px;
+            font-weight: 700;
+            color: #dc2626;
+            margin-bottom: 16px;
+        }
+        
+        .emergency-cta {
+            background: #dc2626;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .emergency-cta:hover {
+            background: #b91c1c;
+            transform: translateY(-1px);
+        }
+        
+        .contact-section {
+            background: #f7f8fa;
+            padding: 48px 0;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            text-align: center;
+        }
+        
+        .contact-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        
+        .contact-text {
+            font-size: 16px;
+            color: #6b7280;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        
+        .contact-method {
+            background: white;
+            border: 1px solid #e1e5e9;
+            border-radius: 50px;
+            padding: 24px;
+            text-align: center;
+        }
+        
+        .contact-method-icon {
+            width: 56px;
+            height: 56px;
+            background: #007AFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            margin: 0 auto 16px;
+        }
+        
+        .contact-method-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+        
+        .contact-method-desc {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 16px;
+        }
+        
+        .contact-method-cta {
+            background: #007AFF;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+        
+        .contact-method-cta:hover {
+            background: #007AFF;
+        }
+        
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 32px 0 24px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: white;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .footer-copy {
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        
+        .footer-legal {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-legal a {
+            color: #9ca3af;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .footer-legal a:hover {
+            color: white;
+        }
+        
+        .sticky-support {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #007AFF;
+            color: white;
+            padding: 16px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(102, 45, 145, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .sticky-support:hover {
+            background: #007AFF;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(102, 45, 145, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .iphone-logo{
+                padding-right: 0px;
+            }
+            
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .hero-cta{
+                width: 100%;
+                justify-content: center;
+
+            }
+            
+            .hero-subtitle {
+                font-size: 16px;
+            }
+            
+            .main-content {
+                padding: 32px 16px;
+            }
+            
+            .help-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .sticky-support {
+                bottom: 16px;
+                right: 16px;
+                padding: 12px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="images/logo.jpg" class="logo">
+            <a href="#" class="iphone-logo">Apple Care</a>
+
+            <a href="tel:+18443145340" class="header-phone">
+                📞 +1-844-314-5340
+            </a>
+        </div>
+    </header>
+    
+    <nav class="breadcrumb">
+        <div class="breadcrumb-container">
+            <span class="breadcrumb-text">
+                <a href="#" class="breadcrumb-link">Home</a> > 
+                <a href="#" class="breadcrumb-link">Support</a> > 
+                Get Help
+            </span>
+        </div>
+    </nav>
+    
+    <section class="hero-section">
+        <div class="hero-container">
+            <h1 class="hero-title">Get help for your Apple device</h1>
+            <p class="hero-subtitle">Having trouble with your iPhone, iCloud, Mac, or any Apple device? Don’t worry! Here's how you can quickly and easily contact Apple Support</p>
+            <a href="tel:+18443145340" class="hero-cta">
+                📞 +1-844-314-5340
+            </a>
+        </div>
+    </section>
+    
+    <section class="support-info">
+        <div class="support-container">
+            <div class="support-item">
+                <div class="support-icon">⏰</div>
+                <span class="support-text">24/7 Support</span>
+            </div>
+            <div class="support-item">
+                <div class="support-icon">🎓</div>
+                <span class="support-text">Expert Technicians</span>
+            </div>
+            <div class="support-item">
+                <div class="support-icon">⚡</div>
+                <span class="support-text">Quick Resolution</span>
+            </div>
+            <div class="support-item">
+                <div class="support-icon">📞</div>
+                <span class="support-text">Phone Support</span>
+            </div>
+        </div>
+    </section>
+    
+    <main class="main-content">
+        <div class="content-header">
+            <h2 class="content-title">Why Contact Apple Support?</h2>
+            <p class="content-subtitle">Apple Support is available 24/7 to assist with any of these problems and more.</p>
+        </div>
+        
+        <div class="help-categories">
+            <div class="help-card">
+                <div class="help-card-icon"></div>
+                <h3 class="help-card-title">iPhone not turning on</h3>
+                <p class="help-card-desc"></p>
+            </div>
+            
+            <div class="help-card">
+                <div class="help-card-icon"></div>
+                <h3 class="help-card-title">iCloud login issues</h3>
+                <p class="help-card-desc"></p>
+            </div>
+            
+            <div class="help-card">
+                <div class="help-card-icon"></div>
+                <h3 class="help-card-title">Forgot Apple ID password</h3>
+                <p class="help-card-desc"></p>
+            </div>
+            
+            <div class="help-card">
+                <div class="help-card-icon"></div>
+                <h3 class="help-card-title">Billing or subscription problems</h3>
+                <p class="help-card-desc"></p>
+            </div>
+            
+            <div class="help-card">
+                <div class="help-card-icon"></div>
+                <h3 class="help-card-title">Software Updates</h3>
+                <p class="help-card-desc">Get assistance with system updates and performance optimization</p>
+            </div>
+            
+            <div class="help-card">
+                <div class="help-card-icon"></div>
+                <h3 class="help-card-title">Advanced Support</h3>
+                <p class="help-card-desc"></p>
+            </div>
+        </div>
+        
+        <div class="emergency-support">
+            <h3 class="emergency-title">Need immediate help?</h3>
+            <p class="emergency-text">If your Apple device isn't working and you need urgent assistance, our support team is standing by</p>
+            <div class="emergency-phone">+1-844-314-5340</div>
+            <a href="tel:+18443145340" class="emergency-cta">
+                🚨 Call Emergency Support
+            </a>
+        </div>
+    </main>
+    
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2 class="contact-title">Best Way to Get Help Quickly</h2>
+            <p class="contact-text">For the fastest assistance, we recommend calling Apple Support directly.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-method-icon">📞</div>
+                    <h3 class="contact-method-title">Phone Support</h3>
+                    <p class="contact-method-desc">Speak directly with a Apple support specialist</p>
+                    <a href="tel:+18443145340" class="contact-method-cta">Call +1-844-314-5340</a>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">💬</div>
+                    <h3 class="contact-method-title">Live Chat</h3>
+                    <p class="contact-method-desc">Chat with our support team online</p>
+                    <a href="tel:+18443145340" class="contact-method-cta">Start Chat</a>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">📧</div>
+                    <h3 class="contact-method-title">Email Support</h3>
+                    <p class="contact-method-desc">Send us your questions and we'll respond quickly</p>
+                    <a href="tel:+18443145340" class="contact-method-cta">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Get Started</a></li>
+                        <li><a href="#">Setup Guide</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                        <li><a href="#">User Manuals</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Account</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Subscriptions</a></li>
+                        <li><a href="#">Billing Help</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Apple Players</a></li>
+                        <li><a href="#">Apple TV</a></li>
+                        <li><a href="#">Apple Audio</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+18443145340">📞 +1-844-314-5340</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Email Support</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    © 2025 Apple, Inc. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="tel:+18443145340" class="sticky-support">
+        📞 Call Support
+    </a>
+    
+    
+
+
+
+
+
+</body></html>
